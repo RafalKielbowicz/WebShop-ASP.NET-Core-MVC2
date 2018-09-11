@@ -1,0 +1,14 @@
+@model IEnumerable<Product> 
+ 
+ <ul class="collection">
+@foreach (var product in Model)
+{
+    <li class="collection-item avatar">
+      <img src="~/images/product.jpg" alt="" class="circle">
+      <span class="title">@product.Name</span>
+      <p>@product.Description<br>
+         @product.Price.ToString("c")
+      </p>
+    </li>
+}
+</ul>
