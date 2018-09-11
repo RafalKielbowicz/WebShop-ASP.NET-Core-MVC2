@@ -18,8 +18,13 @@ using WebShop.Models;
 
 #line default
 #line hidden
+#line 2 "E:\KURSY-PROGRAMOWANIA\Projekty\WebShop\Views\_ViewImports.cshtml"
+using WebShop.Models.ViewModels;
+
+#line default
+#line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"101e29c025b7c28de6c86dbd7d29a3dfadd7316b", @"/Views/_ViewStart.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"ae30ae33a9e24d7c888b55f0fb8a52a2cd234914", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"2527529f2c059606b53063abaf60c152c12d4419", @"/Views/_ViewImports.cshtml")]
     public class Views__ViewStart : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #pragma warning disable 1998
