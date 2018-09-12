@@ -1,0 +1,19 @@
+@model IEnumerable<string>
+
+<a class="collection-item"
+    asp-action="ProductsList"
+    asp-controller="Product"
+    asp-route-category="">
+        Main Page
+</a>
+
+@foreach(var category in Model)
+{
+   <a class="collection-item @(category == ViewBag.SelectedCategory ? "active": "")"
+        asp-action="ProductsList"
+        asp-controller="Product"
+        asp-route-category="@category"
+        asp-route-productPage="1">
+            @category
+    </a> 
+}

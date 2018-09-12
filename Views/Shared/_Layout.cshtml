@@ -33,9 +33,9 @@
     </ul>
     <div class="row">
         <div class="col s12 m4 l3">
-            <ul class="collection">
-                <li class="collection-item">Sth</li>
-            </ul>
+            <div class="collection">
+                @await Component.InvokeAsync("NavigationMenu")
+            </div>
         </div>
         <div class="col s12 m8 l9">
             @RenderBody()

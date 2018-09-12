@@ -13,10 +13,11 @@ namespace WebShop.Controllers
 
         int pageSize = 4;
 
-        public ViewResult ProductsList(int page = 1) =>
+        public ViewResult ProductsList(string category, int page = 1) =>
             View(new ProductsListViewModel 
             {
                 Products = repository.Products
+                    .Where(p => category == null|| p.Category == category)
                     .OrderBy(p => p.Id)
                     .Skip((page-1)*pageSize)
                     .Take(pageSize),
@@ -24,8 +25,9 @@ namespace WebShop.Controllers
                 {
                     CurrentPage = page,
                     ItemsPerPage = pageSize,
-                    TotalItems = repository.Products.Count()
-                }
+                    TotalItems = category == null ? repository.Products.Count() : repository.Products.Where(e => e.Category == category).Count()
+                },
+                CurrentCategory = category
             });
         public string Message() => "Witaj swiecie";
     }
