@@ -1,15 +1,10 @@
 @model ProductsListViewModel
  
- <ul class="collection">
-@foreach (var product in Model.Products)
+@foreach(var p in Model.Products)
 {
-    <li class="collection-item avatar">
-      <img src="~/images/product.jpg" alt="" class="circle">
-      <span class="title">@product.Name</span>
-      <p>@product.Description<br>
-         @product.Price.ToString("c")
-      </p>
-    </li>
+  @Html.Partial("ProductSummary", p);
 }
-</ul>
-<div page-model="@Model.PagingInfo" page-action="ProductsList"></div>
+
+<div page-model="@Model.PagingInfo" page-action="ProductsList" page-classes-enabled="true"
+  page-class="waves-effect" page-class-normal="waves-teal btn-flat" page-class-selected="waves-light btn">
+</div>

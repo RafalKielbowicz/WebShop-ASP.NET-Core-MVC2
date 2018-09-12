@@ -31,7 +31,17 @@ namespace WebShop
             app.UseDeveloperExceptionPage();
             app.UseStatusCodePages();
             app.UseStaticFiles();
-            app.UseMvcWithDefaultRoute();
+            app.UseMvc(routes => {
+                routes.MapRoute(
+                    name: "pagination",
+                    template: "Products/Page{page}",
+                    defaults: new { controller = "Product", action = "ProductsList" });
+                
+                routes.MapRoute(
+                    name: "default",
+                    template: "{controller=Product}/{action=ProductsList}/{id?}"
+                );
+            });
             SeedData.EnsurePopulated(app);
         }
     }
