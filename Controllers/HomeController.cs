@@ -5,6 +5,6 @@ namespace WebShop.Controllers
     public class HomeController : Controller
     {
         public string Index() =>
-            "Hello WOrld";
+            "Hello World";
     }
 }

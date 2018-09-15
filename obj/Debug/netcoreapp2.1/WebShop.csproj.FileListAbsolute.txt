@@ -26,3 +26,6 @@ E:\KURSY-PROGRAMOWANIA\Projekty\WebShop\obj\Debug\netcoreapp2.1\WebShop.pdb
 E:\KURSY-PROGRAMOWANIA\Projekty\WebShop\obj\Debug\netcoreapp2.1\WebShop.csproj.CopyComplete
 E:\KURSY-PROGRAMOWANIA\Projekty\WebShop\obj\Debug\netcoreapp2.1\Razor\Views\Shared\ProductSummary.g.cshtml.cs
 E:\KURSY-PROGRAMOWANIA\Projekty\WebShop\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Components\NavigationMenu\Default.g.cshtml.cs
+E:\KURSY-PROGRAMOWANIA\Projekty\WebShop\obj\Debug\netcoreapp2.1\Razor\Views\Cart\Index.g.cshtml.cs
+E:\KURSY-PROGRAMOWANIA\Projekty\WebShop\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Components\CartSummary\Default.g.cshtml.cs
+E:\KURSY-PROGRAMOWANIA\Projekty\WebShop\obj\Debug\netcoreapp2.1\Razor\Views\Order\Checkout.g.cshtml.cs

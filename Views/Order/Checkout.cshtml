@@ -1,0 +1,72 @@
+@model Order
+
+<h2>Enter shipping address</h2>
+
+    <span class="red-text text-darken-2">
+        <div asp-validation-summary="All"></div>
+    </span>
+<div class="row">
+    <form class="col s12" asp-action="Checkout" method="post">
+            <h5>First name and last name</h5>
+            <div class="row">
+                <div class="input-field col s6">
+                    <input placeholder="First name and last name" asp-for="Name" type="text" class="validate">
+                    <label for="Name">Name</label>
+                </div>
+            </div>
+            <h5>Address</h5>
+            <div class="row">
+                <div class="input-field col s6">
+                    <input placeholder="Line1" asp-for="Line1" type="text" class="validate">
+                    <label for="Name">Address</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s6">
+                    <input placeholder="Line2" asp-for="Line2" type="text" class="validate">
+                    <label for="Line2">Line2</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s6">
+                    <input placeholder="Line3" asp-for="Line3" type="text" class="validate">
+                    <label for="Line3">Line3</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s6">
+                    <input placeholder="City" asp-for="City" type="text" class="validate">
+                    <label for="City">City</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s6">
+                    <input placeholder="State" asp-for="State" type="text" class="validate">
+                    <label for="State">State</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s6">
+                    <input placeholder="Zip" asp-for="Zip" type="text" class="validate">
+                    <label for="Zip">Zip</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s6">
+                    <input placeholder="Country" asp-for="Country" type="text" class="validate">
+                    <label for="Country">Country</label>
+                </div>
+            </div>
+            <div>
+                <p>
+                    <label>
+                        <input type="checkbox" asp-for="GiftWrap"/>
+                        <span>Packed as gift?</span>
+                    </label>
+                </p>
+            </div>
+            <button class="btn waves-effect waves-light" type="submit">Send
+                <i class="material-icons right">send</i>
+            </button>
+    </form>
+</div>

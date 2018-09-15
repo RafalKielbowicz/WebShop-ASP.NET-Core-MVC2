@@ -1,0 +1,8 @@
+@model Cart
+
+<div class="">
+    <a class="btn-floating waves-effect waves-light btn-small" 
+    asp-action="Index" asp-controller="Cart" asp-route-returnUrl="@ViewContext.HttpContext.Request.PathAndQuery()">
+        <i class="material-icons">shopping_cart</i>
+    </a>
+</div>
