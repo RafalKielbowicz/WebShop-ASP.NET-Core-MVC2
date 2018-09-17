@@ -12,5 +12,31 @@ namespace WebShop.Data
         public IQueryable<Product> Products => 
             _context.Products;
 
+        public Product DeleteProduct(int Id)
+        {
+            Product dbEntry = _context.Products.FirstOrDefault(p => p.Id == Id);
+            if(dbEntry != null){
+                _context.Products.Remove(dbEntry);
+                _context.SaveChanges();
+            }
+            return dbEntry;
+        }
+
+        public void SaveProduct(Product product)
+        {
+            if(product.Id == 0){
+                _context.Products.Add(product);
+            } else {
+                Product dbEntry = _context.Products.FirstOrDefault(p => p.Id == product.Id);
+                if(dbEntry != null)
+                {
+                    dbEntry.Name = product.Name;
+                    dbEntry.Description = product.Description;
+                    dbEntry.Price = product.Price;
+                    dbEntry.Category = product.Category;
+                }
+            }
+            _context.SaveChanges();
+        }
     }
 }

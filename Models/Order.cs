@@ -12,6 +12,9 @@ namespace WebShop.Models
         [BindNever]
         public ICollection<CartLine> Lines { get; set; }
 
+        [BindNever]
+        public bool Shipped { get; set; }
+
         [Required(ErrorMessage="Please enter your first name and last name")]
         public string Name { get; set; }
 

@@ -1,0 +1,36 @@
+@model Product
+
+@{
+    ViewBag.Title = "Product Editing";
+    Layout = "_AdminLayout";
+}
+    <span class="red-text text-darken-2">
+        <div asp-validation-summary="All"></div>
+    </span>
+<form asp-action="Edit" method="post">
+    <input type="hidden" asp-for="Id" />
+     <div class="row">
+        <div class="input-field col s6">
+          <input placeholder="Name" asp-for="Name" type="text" class="validate">
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s6">
+          <input asp-for="Description" type="text" class="validate">
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s6">
+          <input placeholder="Category" asp-for="Category" type="text" class="validate">
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s6">
+          <input placeholder="Price" asp-for="Price" type="text" class="validate">
+        </div>
+      </div>
+      <button class="btn waves-effect waves-light" type="submit">Submit
+        <i class="material-icons right">send</i>
+      </button>
+      <a class="waves-effect waves-light btn #e57373 red lighten-2" asp-action="Index">Cancel</a>
+</form>

@@ -1,0 +1,33 @@
+@model IEnumerable<Product>
+
+@{
+    ViewBag.Title = "All Products";
+    Layout = "_AdminLayout";
+}
+
+<table class="highlight">
+    <tr>
+        <th class="center-align">ID</th>
+        <th class="center-align">Product</th>
+        <th class="center-align">Price</th>
+        <th class="center-align">Actions</th>
+    </tr>
+    @foreach(var p in Model)
+    {
+        <tr>
+            <td class="center-align">@p.Id</td>
+            <td class="center-align">@p.Name</td>
+            <td class="center-align">@p.Price.ToString("c")</td>
+            <td class="center-align">
+                <form asp-action="Delete" method="post">
+                    <a class="waves-effect waves-light btn-small" asp-action="Edit" asp-route-Id="@p.Id">Edit<i class="material-icons left">edit</i></a>
+                    <input type="hidden" name="Id" value="@p.Id" />
+                    <button class="waves-effect waves-light btn-small #e57373 red lighten-2" type="submit">Delete<i class="material-icons left">delete</i></button>
+                </form>
+            </td>
+        </tr>
+    }
+</table>
+<div class="center-align">
+    <a class="waves-effect waves-light btn-large" asp-action="Create">Add Product</a>
+</div>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <title>@ViewBag.Title</title>
+    </head>
+    <body>
+        <div class="card-panel #e57373 red lighten-2">
+            <h4 class="center-align">@ViewBag.Title</h4>
+        </div>
+        @if(TempData["message"] != null){
+              <div class="card-panel #b9f6ca green accent-1">@TempData["message"]</div>
+        }
+        @RenderBody()
+    </body>
+</html>
