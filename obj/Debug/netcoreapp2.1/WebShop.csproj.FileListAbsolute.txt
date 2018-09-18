@@ -34,3 +34,4 @@ E:\KURSY-PROGRAMOWANIA\Projekty\WebShop\obj\Debug\netcoreapp2.1\Razor\Views\Orde
 E:\KURSY-PROGRAMOWANIA\Projekty\WebShop\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_AdminLayout.g.cshtml.cs
 E:\KURSY-PROGRAMOWANIA\Projekty\WebShop\obj\Debug\netcoreapp2.1\Razor\Views\Admin\Index.g.cshtml.cs
 E:\KURSY-PROGRAMOWANIA\Projekty\WebShop\obj\Debug\netcoreapp2.1\Razor\Views\Admin\Edit.g.cshtml.cs
+E:\KURSY-PROGRAMOWANIA\Projekty\WebShop\obj\Debug\netcoreapp2.1\Razor\Views\Account\Login.g.cshtml.cs

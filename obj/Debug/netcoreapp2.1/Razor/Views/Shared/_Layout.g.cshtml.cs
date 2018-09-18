@@ -64,7 +64,7 @@ using WebShop.Components;
             WriteLiteral("<!DOCTYPE html>\r\n  <html>\r\n    ");
             EndContext();
             BeginContext(31, 449, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9a08fbbefeed44ef9724fb7633f2a948", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "130be348bd994b858d598fcc472511bf", async() => {
                 BeginContext(37, 436, true);
                 WriteLiteral(@"
       <!--Import Google Icon Font-->
@@ -91,7 +91,7 @@ using WebShop.Components;
             WriteLiteral("\r\n\r\n    ");
             EndContext();
             BeginContext(488, 1180, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c904062afd5146ea95fbce7f432ebe0e", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "33d33ca6b1534c33a26e47b30e256f92", async() => {
                 BeginContext(494, 266, true);
                 WriteLiteral(@"
         

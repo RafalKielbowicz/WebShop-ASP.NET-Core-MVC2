@@ -7,9 +7,15 @@
         <title>@ViewBag.Title</title>
     </head>
     <body>
-        <div class="card-panel #e57373 red lighten-2">
-            <h4 class="center-align">@ViewBag.Title</h4>
-        </div>
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#!" class="brand-logo">@ViewBag.Title</a>
+                <ul class="right">
+                <li>            
+                    <a class="waves-effect waves-light btn right-align" asp-action="Logout" asp-controller="Account">Logout</a>
+                </li>
+            </div>
+        </nav>
         @if(TempData["message"] != null){
               <div class="card-panel #b9f6ca green accent-1">@TempData["message"]</div>
         }
