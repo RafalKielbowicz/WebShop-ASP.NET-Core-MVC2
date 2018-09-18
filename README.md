@@ -10,3 +10,4 @@ To create application were used:
 * Partial View to create product catalog
 * Component to create shopping cart which is working with Session
 * CRUD product operations
+* Identity
